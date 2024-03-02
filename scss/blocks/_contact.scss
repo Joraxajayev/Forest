@@ -1,0 +1,228 @@
+.contact {
+}
+
+.contact_bg {
+  padding: 130px 0;
+  background-image: url(../../images/contact__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include media() {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+
+.contact__content_left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 50px;
+
+  @include media() {
+    padding-left: 30px;
+  }
+}
+
+.contact__content_left h2 {
+  position: relative;
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact__content_left h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-left: -31px;
+  top: -20px;
+  height: 90px;
+  width: 2px;
+  background-color: $text-color;
+}
+
+.contact__content_left p {
+  max-width: 369px;
+  color: $text-white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: left;
+}
+
+.send__box form {
+  inset: 4px;
+  background-color: transparent;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.send__box form .input_box {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.send__box form .input_box input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: $text-white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.send__box form .input_box span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #ffffff80;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: all 0.5s ease;
+}
+
+.send__box form .input_box input:valid ~ span,
+.send__box form .input_box input:focus ~ span {
+  color: $text-white;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+
+.send__box form .input_box i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: $text-white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.send__box form.input_box input:valid ~ i,
+.send__box form.input_box input:focus ~ i {
+  height: 44px;
+}
+
+.input_checkbox {
+  display: flex;
+  gap: 10px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+.input_checkbox label {
+  color: #ffffffab;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: left;
+}
+
+.contact__btn {
+  display: block;
+  padding: 14px 90px;
+  background: transparent;
+  border: 1px solid $text-color;
+  color: $text-white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $text-color;
+  }
+}
+
+.contact__content_right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact__content_right h2 {
+  position: relative;
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact__content_right h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-left: -31px;
+  top: -20px;
+  height: 90px;
+  width: 2px;
+  background-color: $text-color;
+}
+
+.contact__content_right_office {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 12px;
+}
+
+.contact__content_right_office_span {
+  color: $text-white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: left;
+  //   text-transform: lowercase;
+}
+
+.contact__content_right_office p {
+    max-width: 301px;
+  color: $text-white;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: left;
+}
+
+.contact__content_right_phone {
+  padding-bottom: 15px;
+  color: $text-white;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 6%;
+  text-align: left;
+}

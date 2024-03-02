@@ -1,0 +1,138 @@
+.project_hero {
+  background: #1e1e1e;
+  padding-top: 171px;
+  overflow: hidden;
+  padding-bottom: 113px;
+
+  @include media() {
+    padding-bottom: 90px;
+  }
+}
+
+.project_hero .container {
+  max-width: 1400px;
+}
+
+.project_hero__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @include media() {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+
+.project_hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 26px;
+}
+
+.project_hero__content h2 {
+  padding-bottom: 34px;
+  color: $text-white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 121.7%;
+  letter-spacing: 0%;
+  text-align: left;
+
+  @include media() {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.project_hero__content h3 {
+  position: relative;
+  color: $text-white;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 89px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include media() {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.project_hero__content h3::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  margin-left: -32px;
+  margin-bottom: -90px;
+  background-color: $text-color;
+}
+
+.project_hero__content p {
+  padding-bottom: 14px;
+  color: $text-white;
+  max-width: 370px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 167%;
+  letter-spacing: 6%;
+  text-align: left;
+
+  @include media() {
+    text-align: center;
+    font-size: 23px;
+    margin: 0 auto;
+  }
+}
+
+.project_hero__bottom__content {
+  padding-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.project_hero__bottom__content p {
+  padding: 0;
+  color: $text-white;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 121.7%;
+  text-align: left;
+}
+
+.project_hero__bottom__content span {
+  color: $text-color;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 121.7%;
+  text-align: left;
+}
+
+.project_hero__content .btn-primary {
+  @include media() {
+    margin: 0 auto;
+  }
+}
+
+.project_hero__right {
+  // position: relative;
+
+  @include media() {
+    right: 0;
+  }
+}
+
+.project_hero__right img {
+  right: calc(50% - 800px);
+  position: absolute;
+  @include media() {
+    position: sticky;
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+.footer {
+  position: relative;
+  padding: 70px 0;
+  background: #1e1e1e;
+}
+
+.footer__line {
+  position: absolute;
+  top: 0;
+  display: block;
+  max-width: 1600px;
+  height: 1px;
+  background: #0000004d;
+}
+
+.footer .container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media() {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.footer__wrapper p {
+  color: $text-white;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 6%;
+  text-align: left;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__list {
+  display: flex;
+  gap: 46.5px;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+
+.footer__list_item a {
+  color: $text-white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 136.2%;
+  text-align: left;
+
+  @include mobile() {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  @include tablet(){
+    font-size: 20px;
+  }
+}
+
+.footer__list_item .active {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 136.2%;
+  color: $text-color;
+
+  @include media() {
+    font-size: 30px;
+  }
+}
+
+.footer__list_item :hover {
+  transition: all 0.2s ease;
+  color: $text-color;
+}
+
+.topScroller {
+  width: 45px;
+  height: 45px;
+  padding: 10.5px 14.5px;
+  border: 1px solid $text-color;
+  background-image: url(../../images/footer__upDown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.partner {
+    background: #1e1e1e;
+    padding-bottom: 95px;
+}
+
+.partner__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.partner__title {
+    position: relative;
+    padding-left: 50px;
+}
+
+.partner__title::before {
+    content: "ПАРТНЕРЫ";
+    position: absolute;
+    bottom: 40px;
+    left: -85px;
+    color: #ffffff1a;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 131.7%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  
+    @include media() {
+      font-size: 70px;
+      left: 0px;
+    }
+}
+
+.partner__title h2{
+    position: relative;
+    color: $text-color;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 131.7%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.partner__title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-left: -31px;
+    top: -20px;
+    height: 90px;
+    width: 2px;
+    background-color: $text-color;
+}
+
+.partner__content {
+    padding-top: 49px;
+    padding-left: 50px;
+
+    @include media() {
+        padding-left: 0;
+    }
+}
+
+.partner__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 180px;
+    row-gap: 49px;
+
+    @include media() {
+    justify-content: center;
+    }
+}

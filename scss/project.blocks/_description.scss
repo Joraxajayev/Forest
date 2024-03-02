@@ -1,0 +1,124 @@
+.description {
+}
+
+.description__bg {
+  padding-top: 100px;
+  padding-bottom: 121px;
+  background-image: url(../../images/descrip__bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.description__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include media() {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+
+.description__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.description__content h2 {
+  position: relative;
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.description__content h2::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  bottom: -20px;
+  height: 90px;
+  width: 2px;
+  background-color: $text-color;
+}
+
+.description__content p {
+  max-width: 505px;
+  color: $text-white;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 6%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.description__right,
+.description__right__content {
+  display: flex;
+}
+
+.description__right {
+  flex-direction: column;
+  gap: 53px;
+}
+
+.description__right__content {
+  justify-content: space-between;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.adress h6 {
+  color: $text-white;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 177.2%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.location p {
+  color: $text-white;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 6%;
+  text-align: justify;
+}
+
+.description__right__add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media() {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.description__right__add p {
+  max-width: 214px;
+  color: $text-white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 144.7%;
+  letter-spacing: 6%;
+  text-align: left;
+}

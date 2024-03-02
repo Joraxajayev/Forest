@@ -1,0 +1,144 @@
+.project {
+  padding-top: 96px;
+  background: #1e1e1e;
+  padding-bottom: 200px;
+}
+
+.project .container {
+  max-width: 1476px;
+}
+
+.project__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 54px;
+
+  @include media() {
+    padding-left: 0;
+  }
+}
+
+.project__content h2 {
+  color: #ffffff1a;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include media() {
+    font-size: 70px;
+  }
+}
+
+.project__content__dec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 210px;
+  margin-top: 110px;
+
+  @include media() {
+    left: 50px;
+  }
+}
+
+.project__content__dec span {
+  position: relative;
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 131.7%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.project__content__dec span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-left: -31px;
+  top: -20px;
+  height: 90px;
+  width: 2px;
+  background-color: $text-color;
+
+  @include media() {
+  }
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: end;
+  margin-top: 110px;
+  row-gap: 50px;
+
+  @include media() {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.project__list__item_first {
+  display: flex;
+  align-items: end;
+  background-image: url(../images/project__item_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 462px;
+  padding-top: 410px;
+}
+
+.project__list__item_second {
+  display: flex;
+  align-items: start;
+  margin-bottom: 50px;
+  background-image: url(../images/project__item_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 462px;
+  padding-top: 410px;
+}
+
+.project__list__item_third {
+  display: flex;
+  align-items: end;
+  background-image: url(../images/project__item_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 462px;
+  padding-top: 410px;
+}
+
+.project__list__btn {
+  display: block;
+  padding: 28px 24px;
+  color: $text-white;
+  backdrop-filter: blur(12.01px);
+  background: rgba(0, 0, 0, 0.69);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.7%;
+  letter-spacing: 0%;
+  text-align: left;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.89);
+  }
+}
+
+.project__list__btn::after {
+  content: "";
+}
